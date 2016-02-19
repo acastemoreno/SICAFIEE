@@ -434,9 +434,6 @@
 		margin: 0 3em 2em 0;
 	}
 
-	#banner div.center{
-		margin-top: 1em;
-	}
 
 	#banner div:not(.center) h2{
 		font-size: 1.5em;
@@ -456,7 +453,7 @@
 		margin-top: 2em;
 	}
 
-	#banner.bleft div.row.rmiddle{
+	#banner.bleft div.row.rmiddle, #banner:not(.bleft) div.row.middle, #banner:not(.bleft) div.row.middle div{
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -moz-box;
@@ -466,6 +463,10 @@
 		-ms-flex-align: center;
 		-webkit-align-items: center;
 		align-items: center;
+	}
+
+	#banner.bleft div.inner{
+		margin-top: 2em;
 	}
 
 	#banner2 {
@@ -1185,6 +1186,10 @@
 
 		#banner div:not(.center) h2{
 			font-size: 1.3em;
+		}
+
+		#banner div.center{
+			margin-top: 0em;
 		}
 
 		.row > * {
@@ -3531,13 +3536,13 @@
 /* Banner */
 
 	#banner {
-		padding: 2em 0 0.75em 0 ;
+		padding: 1em 0 0.75em 0 ;
 		background-color: #ffffff;
 	}
 
 		#banner .inner {
 			margin: 0 auto;
-			width: 55em;
+			width: 85%;
 		}
 
 		#banner .logo {
@@ -3657,12 +3662,32 @@
 			}
 
 			#banner {
-				padding: 2em 0 1.75em 0 ;
+				padding: 1em 0 1.75em 0 ;
 				margin-bottom: -2.5em;
 			}
 
+			#banner:not(.bleft) {
+				padding-top: 0px ;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				padding-bottom: 0px;
+
+			}
+
+			#banner:not(.bleft) div.row {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+
 				#banner .logo {
-					margin: 0 0 1em 0;
+					margin: 0 0 0 0;
 				}
 
 				#banner.bleft .logo {
