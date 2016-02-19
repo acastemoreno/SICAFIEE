@@ -438,14 +438,34 @@
 		margin-top: 1em;
 	}
 
+	#banner div:not(.center) h2{
+		font-size: 1.5em;
+	}
+
 	#banner div.center.h2{
 		margin-top: 3em;
-		margin-left: 3em;
-		text-align: center;
+	}
+
+	#banner div.center.h2 h2{
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		margin-top: 2em;
 	}
 
 	#banner div.center.h2.tele{
 		margin-top: 2em;
+	}
+
+	#banner.bleft div.row.rmiddle{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
 	}
 
 	#banner2 {
@@ -1161,6 +1181,10 @@
 		#banner div.center.h2{
 			margin-top: 2em;
 			margin-left: 2em;
+		}
+
+		#banner div:not(.center) h2{
+			font-size: 1.3em;
 		}
 
 		.row > * {
@@ -3616,6 +3640,22 @@
 
 		@media screen and (max-width: 736px) {
 
+			#banner div:not(.center) h2{
+				font-size: 1.1em;
+			}
+
+			#banner div.center.h2 h2{
+				font-size: 1em;
+			}
+
+			#banner.bleft div.center.h2 h2{
+				text-align: left;
+			}
+
+			#banner.bleft {
+				margin-bottom: 0em;
+			}
+
 			#banner {
 				padding: 2em 0 1.75em 0 ;
 				margin-bottom: -2.5em;
@@ -3623,6 +3663,10 @@
 
 				#banner .logo {
 					margin: 0 0 1em 0;
+				}
+
+				#banner.bleft .logo {
+					margin-bottom: 0px;
 				}
 
 					#banner .logo .icon {
